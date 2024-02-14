@@ -559,6 +559,7 @@ class Form3:
         plt.style.use('ggplot')
         plt.style.use("dark_background")
 
+        
         PURPLE_shades = ["#4C2A85", "#BE96FF", "#957DAD", "#5E366E", "#A98CCC", "#7B4FA8", "#8265CC", "#A47CC6", "#7F5491", "#704A8B", "#8B68C1", "#8D72C6", "#63436B", "#A284C0"]
         #PURPLE_shades  = ["#c86558", "#b04238", "#cbd6e4", "#d7e1ee", "#a4a2a8", "#bfcbdb", "#991f17", "#b3bfd1", "#df8879"]
         #PURPLE_shades = ["#b04238", "#cbd6e4", "#a4a2a8", "#bfcbdb", "#d7e1ee", "#c86558", "#b3bfd1", "#991f17", "#df8879"]
@@ -566,10 +567,11 @@ class Form3:
           "#9467BD", "#D62728", "#8C564B", "#E377C2", "#7F7F7F", 
           "#BCBD22", "#17BECF"]
         
-        PURPLE_shades = ["#003f5c","#58508d", "#bc5090","#ff6361", "#ffa600"]
+        PURPLE_shades = ['#003f5c', '#2f4b7c', '#665191', '#a05195', '#d45087', '#f95d6a', '#ff7c43', '#ffa600']
 
 
-        #plt.rcParams["axes.prop_cycle"] = plt.cycler(color=[PURPLE_shades[x % len(PURPLE_shades)] for x in range(len(time_studied_dict))])
+
+        plt.rcParams["axes.prop_cycle"] = plt.cycler(color=[PURPLE_shades[x % len(PURPLE_shades)] for x in range(len(time_studied_dict))])
 
         fig, ax = plt.subplots()
 
