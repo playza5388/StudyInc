@@ -565,6 +565,8 @@ class Form3:
         PURPLE_shades = ["#4C2A85", "#FF7F0E", "#2CA02C", "#1F77B4", "#FFDC00", 
           "#9467BD", "#D62728", "#8C564B", "#E377C2", "#7F7F7F", 
           "#BCBD22", "#17BECF"]
+        
+        PURPLE_shades = ["#003f5c","#58508d", "#bc5090","#ff6361", "#ffa600"]
 
 
         #plt.rcParams["axes.prop_cycle"] = plt.cycler(color=[PURPLE_shades[x % len(PURPLE_shades)] for x in range(len(time_studied_dict))])
