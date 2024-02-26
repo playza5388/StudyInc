@@ -858,11 +858,27 @@ class Form4:
             messagebox.showinfo("Message", message)
 
         def on_select(choice):
+            current_datetime = datetime.now()
+
+            # Get the day of the week as an integer (Monday is 1 and Sunday is 7)
+            current_day_of_week = current_datetime.isoweekday()
             slider.configure(state="normal")
-            button.configure(state="normal")
             selected_value = combo_var.get()
             slider_default()
             label_2_1_1.configure(text=f"{int(slider.get())} hours")
+            
+
+            if current_day_of_week == 1:
+                
+                button.configure(state="normal")
+
+            else:
+                
+                slider.configure(state="disabled")
+
+            
+            
+                
             
         def on_enter_courses(event):
 
